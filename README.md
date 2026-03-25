@@ -100,7 +100,3 @@ g++ client.cpp -o client -pthread
 ---
 
 
-##  Future Improvements
-- GUI Interface
-- Database integration
-- Security enhancements
