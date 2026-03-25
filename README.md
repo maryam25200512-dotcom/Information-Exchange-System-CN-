@@ -1,10 +1,13 @@
 # NU-Information Exchange System (FAST Multi-Campus Network)
 
-## 📌 Project Overview
+##  Project Overview
 This project simulates communication between multiple FAST-NUCES campuses using a hybrid TCP/UDP client-server architecture.
 
 
-## 🎯 Objective
+
+---
+
+##  Objective
 To implement a multi-campus communication system where different campuses can:
 - Send direct messages (TCP)
 - Broadcast announcements (UDP)
@@ -12,7 +15,7 @@ To implement a multi-campus communication system where different campuses can:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 - C++ (Socket Programming)
 - TCP & UDP Protocols
 - Multi-threading
@@ -20,22 +23,22 @@ To implement a multi-campus communication system where different campuses can:
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
-### 🔹 Central Server (Islamabad)
+###  Central Server (Islamabad)
 - Handles multiple clients
 - Authenticates campuses
 - Routes messages
 - Broadcasts announcements
 
-### 🔹 Campus Clients
+###  Campus Clients
 - Connect to server via TCP
 - Send heartbeat via UDP
 - Provide console interface for users
 
 ---
 
-## 🌐 Network Configuration
+##  Network Configuration
 
 | Campus  | Password      | UDP Port |
 |---------|--------------|----------|
@@ -46,30 +49,30 @@ To implement a multi-campus communication system where different campuses can:
 
 ---
 
-## 🔁 Communication Protocol
+##  Communication Protocol
 
-### ✅ TCP (Reliable)
+###  TCP (Reliable)
 - Authentication
 - Direct messaging
 - Command handling
 
-### ⚡ UDP (Fast)
+###  UDP (Fast)
 - Heartbeat messages
 - Broadcast messages
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 ### 1. Compile Server
-
+```bash
 g++ server.cpp -o server -pthread
 ./server
 ```
 
-### 2.  Client :
-
-g++ client.cpp -o client -pthread 
+### 2. Compile Client
+```bash
+g++ client.cpp -o client -pthread
 ./client
 ```
 
@@ -80,7 +83,7 @@ g++ client.cpp -o client -pthread
 
 ---
 
-## 📸 Features
+##  Features
 - Multi-client handling using threads
 - Real-time messaging
 - Broadcast system
@@ -89,14 +92,15 @@ g++ client.cpp -o client -pthread
 
 ---
 
-## 📚 Learning Outcomes
+## Learning Outcomes
 - Socket programming (TCP & UDP)
 - Multi-threading in C++
 - Network simulation concepts
 
 ---
 
-## 🔗 Future Improvements
+
+##  Future Improvements
 - GUI Interface
 - Database integration
 - Security enhancements
